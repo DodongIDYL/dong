@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div id="header">
+            <h1 id="logo">Vencing's Ordering Website</h1>
+            <nav>
+                <ul class="menu">   
+                    <li id="home"><a href="../home/home.html">Home</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div id="registerForm">
+            <br>
+            <h1 class="register">Please register here</h1>
+             <?php if (isset($_GET['error'])) { ?>
+                 <div class="error"><?php echo $_GET['error']; ?></div> 
+            <?php } ?> 
+            
+            
+
+            <form action="insert.php" method="POST">
+
+                <p>Name:</p>
+                <input type="text" placeholder="Enter your name" name="name">
+                <p>Surname:</p>
+                <input type="text" placeholder="Enter your surname" name="surname">
+                <p>Username:</p>
+                <input type="text" placeholder="Enter your username" name="username">
+                <p>Password</p>
+                <input type="password" placeholder="Enter your password" name="password">
+                <button>submit</button>
+
+            </form>
+
+            <p><a href="login.html">I have an account yet</a></p>
+        </div>
+    </body>
+</html>

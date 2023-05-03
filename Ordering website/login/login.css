@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation bar*/
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: rgb(9, 153, 189);
+    /* border-bottom:  1px solid grey; */
+    background: transparent; 
+}
+
+#header h1{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#header h1:hover{
+    color: rgb(133, 53, 53);
+}
+
+body{
+     background-color: rgb(26, 62, 116); 
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+li, a{
+    text-decoration: none;
+}
+
+nav{
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+nav li a{
+    transition: all 0.3s ease 0s;
+    font-size: 20px;
+    color: black;
+}
+
+
+nav li a:hover{
+    text-decoration: underline;
+    color: rgb(133, 53, 53);
+    border-radius: 20px;
+}
+
+/* Login Form */
+
+#loginForm{
+    border: 1px  black;
+    margin: 100px 30em;
+    padding: 0 91px;
+    height: 25em;
+    border-radius: 20px;
+    opacity:70;
+    background-color: skyblue;
+    /* backdrop-filter: blur(10px); */
+    display: flex;
+    justify-content: center;
+}
+
+
+p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input{
+    /* border-radius: 5px; */
+    /* height: 2em; */
+    /* width: 15em; */
+    /* margin-bottom: 25px; */
+    /* margin-top: 5px; */
+    width: 100%;
+    height: 20%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color:solid #162938;
+    font-weight: 500 ;
+    padding: 0 35px 0 5px;
+}
+
+button{
+    /* width: 13.2em; */
+    /* height: 2em; */
+    /* border-radius: 10px; */
+    /* margin-bottom: 10px; */
+    /* margin-top: 10px; */
+    /* font-weight: bold; */
+    /* font-size: 15px; */
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+button:hover{
+    background: rgb(7, 238, 69);
+    color: rgb(233, 22, 120);
+    border-color: rgb(141, 29, 29);
+    cursor: pointer;
+}
+
+#loginForm a{
+    color: rgb(13, 65, 207);
+    font-size: 20px;
+}
+
+#loginForm a:hover{
+    color: rgb(210, 196, 36);
+    text-decoration: underline;
+}
+
+.login{
+    text-align: center;
+}
+
+/* registration form */
+
+.register{
+    text-align: center;
+    font-size: 23px;
+}
+
+#registerForm{
+    border: none;
+    margin: 100px 30em;
+    padding: 0 91px;
+    height: 29em;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    /* background-color: rgb(28, 228, 195); */
+    /* height: 30em; */
+    /* background: transparent; */
+    background-color: skyblue;
+}
+
+#registerForm a{
+    color: black;
+}
+
+#registerForm a:hover{
+    color: rgb(255, 222, 10);
+    text-decoration: underline;
+}
+
+/* admin mode */
+
+#table{
+    padding: 15px;
+    margin-top: 20px;
+    background-color: rgb(208, 242, 41);
+}
+
+th{
+    padding: 0px 20px;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+/* message */
+.error{
+    padding: 5px;
+    background-color: rgb(247, 181, 181);
+    border-radius: 5px;
+    width: 100%;
+}
+
+#logo{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#logo:hover{
+    background-color: white;
+    border-color: blueviolet;
+}
